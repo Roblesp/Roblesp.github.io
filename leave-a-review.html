@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSIS Job Opportunities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2E8540;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #2E8540;
+      color: white;
+      padding-top: 20px;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    nav a:hover {
+      background-color: #1e4d26;
+    }
+
+    main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .content-container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .text-content {
+      flex: 2;
+    }
+
+    .image-right {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .image-right img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    /* Form Styles */
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #2E8540;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1e4d26;
+    }
+
+    footer {
+      text-align: right;
+      padding: 20px;
+      background-color: #2E8540;
+      color: white;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Job Positions.html">Job Positions</a>
+    <a href="requirements.html">Requirements</a>
+    <a href="leave-a-review.html">Leave a Review</a>
+    <a href="https://github.com/Roblesp/CTI110" target="_blank">GitHub Account</a>
+  </nav>
+
+  <header>
+    <h1>Leave Us a Review or Ask a Question</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="rating">How well was the website?</label>
+      <select id="rating" name="rating" required>
+        <option value="">Choose an option</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+	  
+      <label for="comments">Comments / Questions:</label>
+      <textarea id="comments" name="comments" placeholder="Type your message here..." required></textarea>
+
+      <div class="button-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+      Copyright &copy; 2021&nbsp;&nbsp; Fellow Advisor — <a href="mailto:roblesp5519@student.faytechcc.edu">Contact Us</a>
+    </footer>
+
+</body>
+</html>
